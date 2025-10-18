@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import EventCard from "./components/EventCard";
 import BetSlipCard from "./components/BetSlipCard";
-import useEvent from "./hooks/useEvent";
+import useEvent from "./hooks/event/useEvent";
 import { Event } from "./redux/event/eventSlice";
 
 const App: React.FC = () => {

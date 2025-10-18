@@ -1,12 +1,13 @@
 import reducer, { addRemoveBet, BetSlip, BetSlipState, initialState, removeBet } from "./betSlipSlice";
 
 const exampleBet: BetSlip = {
-  eventName: 'eventName',
   eventId: 1,
-  marketName: 'marketName',
+  eventName: 'eventName',
+  eventDescription: 'eventDescription',
   marketId: 1,
-  selectionName: 'selectionName',
+  marketName: 'marketName',
   selectionId: 1,
+  selectionName: 'selectionName',
   selectionPrice: 3.50,
 };
 
@@ -46,5 +47,5 @@ describe('betSlip reducer', () => {
         expect(reducer(initialLocalState, removeBet(exampleBet))).toEqual({bets: []})
     })
 
-    
+
 })

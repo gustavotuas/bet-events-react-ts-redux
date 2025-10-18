@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootState } from "../redux/store";
-import {addRemoveBet, BetSlip, removeBet} from  "../redux/betSlip/betSlipSlice";
+import { AppDispatch, RootState } from "../../redux/store";
+import {addRemoveBet, BetSlip, removeBet} from  "../../redux/betSlip/betSlipSlice";
 
 const useBetSlip = () =>{
 

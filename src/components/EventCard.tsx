@@ -10,7 +10,7 @@ import {
   Typography,
 } from "@mui/material";
 import { Event } from "../redux/event/eventSlice";
-import useBetSlip from "../hooks/useBetSlip";
+import useBetSlip from "../hooks/betSlip/useBetSlip";
 import { BetSlip } from "../redux/betSlip/betSlipSlice";
 
 type EventCardProps = {
@@ -80,7 +80,7 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
                 >
                   {market.name}
                 </Typography>
-                
+
                 <Grid container spacing={1.5} justifyContent="left">
                   {market.selections?.map((selection) => {
                     const isSelected = isBetSelected(

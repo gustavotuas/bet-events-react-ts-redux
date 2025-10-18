@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import useBetSlip from "../hooks/useBetSlip";
+import useBetSlip from "../hooks/betSlip/useBetSlip";
 import {
   Box,
   Button,

@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootState } from "../redux/store";
-import {eventAsyncThunk} from "../redux/event/eventSlice";
+import { AppDispatch, RootState } from "../../redux/store";
+import {eventAsyncThunk} from "../../redux/event/eventSlice";
 
 const useEvent = () =>{
 
