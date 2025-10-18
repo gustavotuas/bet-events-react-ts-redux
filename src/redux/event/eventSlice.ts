@@ -36,7 +36,7 @@ export const eventAsyncThunk = createAsyncThunk<Event[]>(
     "events/fetchAll",
     async(_, {rejectWithValue}) =>{
         try {
-            // const url = new URL("https://getscodes.free.beeceptor.com/events/fetchAll");
+            // const url = new URL("http://demo6181469.mockable.io/events/fetchAll");
             // const response = await fetch(url);
             // if(!response.ok) throw new Error("Error fetching data.");
             // const data : Event[] = await response.json();
@@ -52,21 +52,7 @@ export const eventAsyncThunk = createAsyncThunk<Event[]>(
 const eventSlice = createSlice({
     name:"events",
     initialState,
-    reducers:{
-        // startLoading: (state) =>{
-        //     state.isLoading = true;
-        //     state.error= '';
-        //     state.response = [];
-        // },
-        // setError: (state, action: PayloadAction<string>) =>{
-        //     state.isLoading = false;
-        //     state.error = action.payload;
-        // },
-        // setEventState: (state, action: PayloadAction<Event[]>)=>{
-        //     state.isLoading = false;
-        //     state.response = action.payload;
-        // }
-    },
+    reducers:{},
     extraReducers: (builder) =>{
         builder
         .addCase(eventAsyncThunk.pending, (state)=>{
