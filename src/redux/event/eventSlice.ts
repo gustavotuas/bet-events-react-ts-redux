@@ -26,7 +26,7 @@ export interface EventState  {
     response: Event[]
 }
 
-const initialState: EventState  = {
+export const initialState: EventState  = {
     isLoading: false,
     error: '',
     response: []
